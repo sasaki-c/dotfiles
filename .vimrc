@@ -46,6 +46,7 @@ endif
 
 " ここにインストールしたいプラグインのリストを書く
 NeoBundle 'mattn/emmet-vim'
+NeoBundle 'Align'
 
 filetype plugin on
 filetype indent on
