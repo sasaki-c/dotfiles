@@ -1,8 +1,5 @@
 # Application Shortcuts
-alias cot='open -g -a CotEditor' # ターミナルからCotEditorを開く
 alias coda='open -g -a Coda' # ターミナルからCodaを開く
-alias safari='open -g -a safari' # ターミナルからSafariを開く
-alias console='open -a console' # ターミナルからコンソールを開く
 
 # MAMP
 alias web='cd /Applications/MAMP/htdocs/' # MAMPのドキュメントルートにジャンプする
