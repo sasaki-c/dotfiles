@@ -2,6 +2,10 @@ let g:hybrid_use_Xresources = 1
 colorscheme hybrid
 :syntax on
 
+" 行頭行末の左右移動で行をまたぐ
+:set compatible
+:set whichwrap=b,s,[,],<,>
+
 " 行番号を表示
 :set nu
 
