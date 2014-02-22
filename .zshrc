@@ -7,7 +7,7 @@ autoload -U colors; colors
 # プロンプト関係
 # %n : ユーザ名
 # %m : ホスト名
-PROMPT="%F{green}%n%F{white}@%f%F{green}%m%f%f[%D %*]%F{red}%(!.#.$)%f "
+PROMPT="%F{green}%n%f%F{white}@%f%F{cyan}%D %*%f%F{red}%(!.#.$)%f "
 # PROMPT2="%n %_%%"
 # SPROMPT="%r is correct? [n,y,a,e]: "
 RPROMPT="%F{yellow}[%d]%f"
