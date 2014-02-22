@@ -22,4 +22,3 @@ alias sr='screen -d -R'
 alias grep='grep --exclude=*.svn*'
 alias greprn='grep -rn --exclude=*.svn*'
 alias bye='sudo shutdown -h now'
-
