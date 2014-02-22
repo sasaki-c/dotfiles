@@ -5,16 +5,18 @@ source ~/.bashrc
 autoload -U colors; colors
 
 # プロンプト関係
-PROMPT="%F{green}%n%F{white}@%f%F{green}%m%f%f%F{red}%(!.#.$)%f "
-#PROMPT2="%n %_%%"
-#SPROMPT="%r is correct? [n,y,a,e]: "
+# %n : ユーザ名
+# %m : ホスト名
+PROMPT="%F{green}%n%F{white}@%f%F{green}%m%f%f[%D %*]%F{red}%(!.#.$)%f "
+# PROMPT2="%n %_%%"
+# SPROMPT="%r is correct? [n,y,a,e]: "
 RPROMPT="%F{yellow}[%d]%f"
 
 # 補完機能を使用する
 autoload -U compinit promptinit
 compinit
 zstyle ':completion::complete:*' use-cache true
-#zstyle ':completion:*:default' menu select true
+# zstyle ':completion:*:default' menu select true
 zstyle ':completion:*:default' menu select=2
 
 # 大文字、小文字を区別せず補完する
