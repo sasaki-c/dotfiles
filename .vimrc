@@ -1,13 +1,28 @@
 let g:hybrid_use_Xresources = 1
+
+" カラースキーマの設定
 colorscheme hybrid
-:syntax on
+
+" 色付け
+syntax on
+
+" VimをなるべくVi互換にする
+set compatible
 
 " 行頭行末の左右移動で行をまたぐ
-set compatible
-set whichwrap=b,s,[,],<,>
+set whichwrap=b,s,h,l,<,>,[,]
 
 " 行番号を表示
-set nu
+set number
+
+" コマンドライン補完を便利に
+set wildmenu
+
+" タイプ途中のコマンドを画面最下行に表示
+set showcmd
+
+" 画面最下行にルーラーを表示する
+set ruler
 
 " 自動インデントモードを禁止
 set noautoindent
