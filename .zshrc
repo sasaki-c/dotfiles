@@ -33,14 +33,6 @@ zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([%0-9]#)*=0=01;31
 autoload -U zcalc
 autoload zed
 
-# 予測入力させる
-# autoload predict-on
-# zle -N predict-on
-# zle -N predict-off
-# bindkey '^X^P' predict-on
-# bindkey '^O' predict-off
-# zstyle ':predict' verbose true
-
 # 入力途中の履歴補完を有効化する
 autoload history-search-end
 zle -N history-beginning-search-backward-end history-search-end
@@ -49,10 +41,6 @@ zle -N history-beginning-search-forward-end history-search-end
 # 入力途中の履歴補完
 bindkey "^P" history-beginning-search-backward-end
 bindkey "^N" history-beginning-search-forward-end
-
-# インクリメンタルサーチの設定
-#bindkey "^R" history-incremental-search-backward
-#bindkey "^S" history-incremental-search-forward
 
 # 履歴のインクリメンタル検索でワイルドカード利用可能
 bindkey '^R' history-incremental-pattern-search-backward
@@ -192,20 +180,8 @@ setopt COMPLETE_IN_WORD
 # バックグラウンドジョブが終了したらすぐに知らせる。
 setopt NO_TIFY
 
-
 #ライン操作はEmacsスタイルで行う
 bindkey -e
 
 #C-Uで行頭まで削除
 bindkey "^U" backward-kill-line
-
-#ttyで省電力のための画面を消す機能を無効化する(xterm)
-#setterm -blank 0
-
-#端末設定
-#Ctrl+H に 1 文字削除
-#stty erase '^H'
-#Ctrl+C に割り込み
-#stty intr '^C'
-# Ctrl+Z にサスペンド
-#stty susp '^Z'
